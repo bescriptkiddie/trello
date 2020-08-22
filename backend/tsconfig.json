@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es2016",
+    "sourceMap": true,
+    "noImplicitAny": true, /* 隐式类型 */
+    "strictNullChecks": true, /* 空值检查 */
+    "experimentalDecorators": true, /* 装饰器 */
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true, /* 引入json */
+    "esModuleInterop": true, /* 模块化问题 */
+    "allowSyntheticDefaultImports": true, /* 默认导出问题 */
+    "allowJs": true /* 允许编译javascript文件 */
+  },
+  // 设定ts编译文件目录
+  "include": [
+    "./src/**/*"
+  ]
+}
