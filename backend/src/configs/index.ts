@@ -1,20 +1,43 @@
+import databaseConfig from './database.json'
+
+interface IDatabaseConfig {
+    username: string;
+    password: string;
+    database: string;
+    host: string;
+    dialect: 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'mariadb';
+    timezone: string;
+}
+
 const configs = {
-    development:{
-        server:{
-            host:'localhost',
-            port:8080
+    development: {
+        server: {
+            host: 'localhost',
+            port: 8080
+        },
+        database: databaseConfig.development as IDatabaseConfig,
+        jwt: {
+            privateKey: 'pika'
         }
     },
-    test:{
-        server:{
-            host:'localhost',
-            port:8080
+    test: {
+        server: {
+            host: 'localhost',
+            port: 8080
+        },
+        database: databaseConfig.test as IDatabaseConfig,
+        jwt: {
+            privateKey: 'pika'
         }
     },
-    production:{
-        server:{
-            host:'localhost',
-            port:8080
+    production: {
+        server: {
+            host: 'localhost',
+            port: 8080
+        },
+        database: databaseConfig.production as IDatabaseConfig,
+        jwt: {
+            privateKey: 'pika'
         }
     },
 }

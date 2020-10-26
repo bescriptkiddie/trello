@@ -1,0 +1,23 @@
+{
+  "development": {
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "username": "root",
+    "password": "wywy1203",
+    "database": "trello_development"
+  },
+  "test": {
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "username": "root",
+    "password": "wywy1203",
+    "database": "trello_test"
+  },
+  "production": {
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "username": "root",
+    "password": "wywy1203",
+    "database": "trello_production"
+  }
+}
